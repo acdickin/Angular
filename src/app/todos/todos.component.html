@@ -18,6 +18,6 @@
     <!-- Loop through data -->
     <li *ngFor="let todo of todos" class="list-group-item">
       <span (click)="editTodo(todo)"> {{todo.text}} </span>
-      <button class="btn btn-danger" (click)="deleteTodo(todo.text)" value="Delete">X</button>
+      <button class="btn btn-danger btn-sm" (click)="deleteTodo(todo.text)" value="Delete">X</button>
     </li>
   </ul>
